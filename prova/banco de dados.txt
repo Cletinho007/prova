@@ -1,0 +1,11 @@
+create database prova;
+use prova;
+create table projetos(
+idprojetos int auto_increment primary key,
+nome varchar(255),
+cliente varchar(255),
+dataProjeto date,
+statusProjeto varchar(255)
+);
+INSERT INTO projetos (idprojetos, nome, cliente, dataProjeto, statusProjeto) VALUES (1,'robo', 'cleito','2002-01-01','ativo');
+select * from projetos; 
